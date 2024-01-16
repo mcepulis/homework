@@ -80,3 +80,41 @@
     //Minimalus skaičius: Raskite mažiausią skaičių savo masyve. 
     const minNumber = Math.min(...arrayNumber);
     console.log(`array ${[arrayNumber]} maxNumber is ${minNumber}`);
+
+    //Unikalūs elementai: Sukurkite masyvą su unikaliais elementais (pašalinkite dublikatus). 
+
+    const duplicateNumbers = [8, 8, 4, 2, 1, 1, 1, 1, 8, 4, 9, 3, 7, 8, 7];
+
+    const uniqueNumbers = duplicateNumbers.filter((data, index) => duplicateNumbers.indexOf(data) === index);
+    console.log(uniqueNumbers);
+
+    //Skaičių suma: Susumuokite visus skaičius savo masyve. 
+console.log(arrayNumber);
+    const sum = arrayNumber.reduce((a, b) => a + b);
+    console.log(sum);
+
+    //Vidurkis: Apskaičiuokite vidurkį iš savo masyvo skaičių. 
+    
+    console.log(arrayNumber.length);
+    const mid = arrayNumber.reduce((a, b) => (a + b));
+    console.log(mid/arrayNumber.length);
+
+    /*Skaičių kvadratai: Sukurkite naują masyvą, kuriame būtų visi jūsų pradinio masyvo 
+    skaičių kvadratai. */
+
+    const doubleNumbers = arrayNumber.map((x) => x*x);
+    console.log(doubleNumbers);
+
+    //Elemento paieška: Patikrinkite, ar tam tikras skaičius yra jūsų masyve. 
+    function findElement(x) {
+        if (arrayNumber.filter(element => element) === x) {
+            return x;
+        } 
+    }
+
+    console.log(findElement(1));
+    console.log(arrayNumber.filter(element => element === 6));
+
+
+    // const findEl = arrayNumber.filter(element => element === );
+    // console.log(findEl);
