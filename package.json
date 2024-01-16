@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sumOfPositive": "node --watch codewars/sumOfPositive.js",
+    "planetById": "node --watch codewars/planetById.js",
+    "nd": "node --watch classwork/nd.js",
+    "kd": "node --watch classwork/kd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
