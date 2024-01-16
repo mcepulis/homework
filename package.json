@@ -12,5 +12,8 @@
   },
   "keywords": [],
   "author": "Mike  Pukuotukas (https://github.com/mcepulis)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
