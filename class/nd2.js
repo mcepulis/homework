@@ -39,7 +39,7 @@
     //Rikiavimas: Surikiuokite savo masyvą didėjančia tvarka. 
 
     arrayNumber.sort((a, b) => a - b);
-    console.log(arrayNumber);
+    console.log("ASC order: " + arrayNumber);
    
     //Filtravimas: Sukurkite naują masyvą, kuriame būtų tik lyginiai skaičiai iš jūsų pradinio masyvo. 
 
@@ -89,7 +89,7 @@
     console.log(uniqueNumbers);
 
     //Skaičių suma: Susumuokite visus skaičius savo masyve. 
-console.log(arrayNumber);
+    console.log(arrayNumber);
     const sum = arrayNumber.reduce((a, b) => a + b);
     console.log(sum);
 
@@ -107,14 +107,59 @@ console.log(arrayNumber);
 
     //Elemento paieška: Patikrinkite, ar tam tikras skaičius yra jūsų masyve. 
     function findElement(x) {
-        if (arrayNumber.filter(element => element) === x) {
-            return x;
-        } 
+        return arrayNumber.includes(x);
     }
-
     console.log(findElement(1));
-    console.log(arrayNumber.filter(element => element === 6));
+    console.log(findElement(8));
+    
+    //Pridėti prie kiekvieno elemento: Prie kiekvieno masyvo elemento pridėkite skaičių 5. 
+
+    const numbersPlusFive = arrayNumber.map((x) => x+5);
+    console.log(numbersPlusFive);
+
+    //Atvirkštinis rikiavimas: Surikiuokite savo masyvą mažėjančia tvarka. 
+
+    arrayNumber.sort((a, b) => b - a);
+    console.log("DESC order: " + arrayNumber);
+
+    //Skaičių poros: Sukurkite masyvą, kuriame būtų visos galimos skaičių poros iš jūsų pradinio masyvo.
+
+    let pairNumbersString = [];
+    for (let i = 0; i < duplicateNumbers.length; i++) {
+        if (i%2 === 0){
+            pairNumbersString.push("" + duplicateNumbers[i] + duplicateNumbers[i + 1]);
+        }
+    }
+    const pairNumbers = pairNumbersString.map(str => parseInt(str))
+    console.log(duplicateNumbers);
+    console.log(pairNumbersString);
+    console.log(pairNumbers);
 
 
-    // const findEl = arrayNumber.filter(element => element === );
-    // console.log(findEl);
+    // Duota movieTheaterSeats masyvas
+    // Užduotis: Pakeiskite null savo vardu naudodami masyvo indeksus
+    // Pasitikrinkite konsolėje ar teisingai
+
+    const movieTheaterSeats = [
+    [ 'Jonas', 'Petras', 'Tomas' ],
+    [ 'Kazys', 'Rimas', 'Antanas' ],
+    [ 'Simas', null, 'Lina' ],
+    [ 'Radvilė', 'Kęstas', 'Lidija' ],
+    [ 'Laurynas', 'Kostas', 'Alma' ]
+];
+
+    const newSeat = movieTheaterSeats.map(item => item.map(subItem => subItem == null ? "Marius" : subItem));
+    console.log(newSeat);
+
+    // papildoma užduotis: Ištraukite konolėje vardus: Tomas, Kazys,Kęstas, Laurynas
+    //įterpkite į jų vardus kitus jūsų sugalvotus.
+
+    const newName1 = movieTheaterSeats.map(item => item.map(subItem => subItem == "Tomas" ? "kitasTomas" : subItem));
+    const newName2 = movieTheaterSeats.map(item => item.map(subItem => subItem == "Kazys"  ? "kitasKazys" : subItem));
+    const newName3 = movieTheaterSeats.map(item => item.map(subItem => subItem == "Kęstas" ? "kitasKęstas" : subItem));
+    const newName4 = movieTheaterSeats.map(item => item.map(subItem => subItem == "Laurynas" ? "kitasLaurynas" : subItem));
+
+    console.log(newName1[0][2]);
+    console.log(newName2[1][0]);
+    console.log(newName3[3][1]);
+    console.log(newName4[4][0]);
