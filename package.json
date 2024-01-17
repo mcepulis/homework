@@ -6,6 +6,7 @@
   "scripts": {
     "sumOfPositive": "node --watch codewars/sumOfPositive.js",
     "planetById": "node --watch codewars/planetById.js",
+    "nd3": "node --watch class/nd3.js",
     "nd2": "node --watch class/nd2.js",
     "nd": "node --watch class/nd.js",
     "kd": "node --watch class/kd.js",
