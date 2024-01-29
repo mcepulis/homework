@@ -1,8 +1,20 @@
 //_1. Sukurkite funkciją kuri priimtų parametrą "name". Jos tikslas atspausdinti naršyklėje tekstą 
 //"Labas," ir šalia jo perduotą vardą. Pvz "Labas, Elena".
 
+function print(message) {
+
+      var div = document.getElementById("test");
+      div.innerHTML = message;
+    }
 
 
+
+const vardas = getName("Marius")
+if (typeof document !== 'undefined') {
+
+
+const content = document.getElementById("test");
+}
 
 
 //_2. Sukurkite funkciją  kuri priimtų vieną parametrą (tekstą) ir grąžintų atsakymą kiek simbolių 

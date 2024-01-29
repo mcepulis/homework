@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tripleTrouble": "node --watch codewars/tripleTrouble.js",
+    "drinks": "node --watch codewars/drinks.js",
+    "bulletsVSdragons": "node --watch codewars/bulletsVSdragons.js",
+    "ageDiff": "node --watch codewars/ageDiff.js",
+    "allStarCode": "node --watch codewars/allStarCode.js",
+    "polishAlphabet": "node --watch codewars/polishAlphabet.js",
     "sumOfPositive": "node --watch codewars/sumOfPositive.js",
     "planetById": "node --watch codewars/planetById.js",
+    "dev": "dead-server --host=localhost --port=4904",
+    "kvadratas": "node --watch class/kvadratas.js",
     "nd3": "node --watch class/nd3.js",
     "nd2": "node --watch class/nd2.js",
     "nd": "node --watch class/nd.js",
@@ -17,5 +25,8 @@
   "license": "MIT",
   "dependencies": {
     "nodemon": "^3.0.2"
+  },
+  "devDependencies": {
+    "dead-server": "^1.0.9"
   }
 }
