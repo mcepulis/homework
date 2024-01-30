@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "alterLetters": "node --watch codewars/alterLetters.js",
+    "initials": "node --watch codewars/initials.js",
     "tripleTrouble": "node --watch codewars/tripleTrouble.js",
     "drinks": "node --watch codewars/drinks.js",
     "bulletsVSdragons": "node --watch codewars/bulletsVSdragons.js",
